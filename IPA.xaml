@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Try4" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="791.2,2116" sap2010:WorkflowViewState.IdRef="Try4_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Try4" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="880,2116" sap2010:WorkflowViewState.IdRef="Try4_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -84,7 +84,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="585.6,1832.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Directory.GetFiles(&quot;D:\COLLEGE\Semester 5\Mini Project\Invoice&quot;)]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="585.6,1832.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Directory.GetFiles(&quot;D:\COLLEGE\Mini Project\Invoice&quot;)]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -97,7 +97,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="[item.ToString]" sap:VirtualizedContainerService.HintSize="508.8,88" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
-            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'wps.exe invoice1.pdf'" sap:VirtualizedContainerService.HintSize="508.8,1487.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="f93ce63b25fbd7271195b6d04d66e412" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' omit:title='invoice1.pdf - Adobe Acrobat Reader (64-bit)' /&gt;">
+            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'wps.exe invoice1.pdf'" sap:VirtualizedContainerService.HintSize="508.8,1487.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="43b262df4c691d2f637b3e20023a31ee" Selector="&lt;wnd app='acrobat.exe' cls='AVL_AVWindow' idx='*' /&gt;">
               <ui:WindowScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -119,9 +119,9 @@
                         </ActivityFunc>
                       </ui:GetOCRText.OCREngine>
                       <ui:GetOCRText.Target>
-                        <ui:Target Element="{x:Null}" Id="4b25e511-f530-4342-a470-d59646286be6" InformativeScreenshot="81f3f1a4e3caf67f3acba11a4bfbba66" Selector="&lt;wnd cls='AVL_AVView' idx='2' title='AVSplitterView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrollView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;">
+                        <ui:Target Element="{x:Null}" Id="4b25e511-f530-4342-a470-d59646286be6" InformativeScreenshot="0f106119621c9cb8a9bcb890db1b566d" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' omit:title='invoice1.pdf - Adobe Acrobat Reader (64-bit)' /&gt;&lt;wnd cls='AVL_AVView' title='AVSplitterView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrollView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;">
                           <ui:Target.ClippingRegion>
-                            <ui:Region Rectangle="473, 308, 107, 16" />
+                            <ui:Region Rectangle="545, 316, 112, 17" />
                           </ui:Target.ClippingRegion>
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
@@ -145,9 +145,9 @@
                         </ActivityFunc>
                       </ui:GetOCRText.OCREngine>
                       <ui:GetOCRText.Target>
-                        <ui:Target Element="{x:Null}" Id="81290355-3eeb-4efd-9e0b-fd7340fcd4ed" InformativeScreenshot="0c378b5ec852f6d2c6b5f05499ca6228" Selector="&lt;wnd cls='AVL_AVView' idx='2' title='AVSplitterView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrollView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;">
+                        <ui:Target Element="{x:Null}" Id="81290355-3eeb-4efd-9e0b-fd7340fcd4ed" InformativeScreenshot="c66b943018c7300a080899acf4d97ec5" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' omit:title='invoice1.pdf - Adobe Acrobat Reader (64-bit)' /&gt;&lt;wnd cls='AVL_AVView' title='AVSplitterView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrollView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;">
                           <ui:Target.ClippingRegion>
-                            <ui:Region Rectangle="458, 324, 55, 12" />
+                            <ui:Region Rectangle="528, 332, 60, 15" />
                           </ui:Target.ClippingRegion>
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
@@ -171,9 +171,9 @@
                         </ActivityFunc>
                       </ui:GetOCRText.OCREngine>
                       <ui:GetOCRText.Target>
-                        <ui:Target Element="{x:Null}" Id="81290355-3eeb-4efd-9e0b-fd7340fcd4ed" InformativeScreenshot="0da6aa5048b34355b9370e48b70a1f14" Selector="&lt;wnd cls='AVL_AVView' idx='2' title='AVSplitterView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrollView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;">
+                        <ui:Target Element="{x:Null}" Id="81290355-3eeb-4efd-9e0b-fd7340fcd4ed" InformativeScreenshot="d2be95e39c6f77e708cd29dde9c062dc" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' omit:title='invoice1.pdf - Adobe Acrobat Reader (64-bit)' /&gt;&lt;wnd cls='AVL_AVView' title='AVSplitterView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVScrollView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;">
                           <ui:Target.ClippingRegion>
-                            <ui:Region Rectangle="416, 383, 216, 54" />
+                            <ui:Region Rectangle="484, 395, 223, 72" />
                           </ui:Target.ClippingRegion>
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
